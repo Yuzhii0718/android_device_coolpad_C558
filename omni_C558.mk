@@ -7,9 +7,6 @@ $(call inherit-product, device/coolpad/C558/device.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
 PRODUCT_DEVICE := C558
 PRODUCT_NAME := omni_C558
 PRODUCT_BRAND := Coolpad
