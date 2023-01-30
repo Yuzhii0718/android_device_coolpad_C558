@@ -1,5 +1,12 @@
 $(call inherit-product, build/target/product/embedded.mk)
 
+# Inherit from coolpad_C558 device
+$(call inherit-product, device/coolpad/C558/device.mk)
+
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
