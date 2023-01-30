@@ -16,7 +16,7 @@ on init
     mkdir /config/usb_gadget/g1/functions/ffs.adb
 
     start hwservicemanager
-    setprop crypto.ready 1
+    exec u:r:recovery:s0 -- /sbin/mntl_link
 
 on post-fs-data
 # Support A/B feature for boot region
