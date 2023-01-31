@@ -1,5 +1,6 @@
 #import /init.mt6739.usb.rc
 #import /init.usb.configfs.rc
+import ${ro.vendor.rc}init.mt6739.usb.rc
 
 on init
     mkdir /config
